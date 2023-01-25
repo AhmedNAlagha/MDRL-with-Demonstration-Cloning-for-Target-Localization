@@ -5,7 +5,7 @@ The contents of this repository are as follows:
 * MDRL-DC: the python files required to train and test an MDRL-DC model for the target localization problem.
 * Experts: pre-trained experts used in the MDRL-DC model. The folder has 3 experts, previosuly trained in a single-agent environment with 1, 2, or 3 walls.
 * Embeddings: a folder that contains pre-trained encoders (autoencoders) which are used to encode the walls map. Each encoder is pre-trained on datasets of 1, 2, or 3 walls.
-* Datasets: this folder is to contain 3 datasets for environment variations of 1, 2, and 3 walls. Each dataset contains hundreds of thousands of different distributions of walls. This helps in saving time during training instead of creating wall distributions actively at the beginning of each episode. Due to the size limitations in GitHub, the user is required to download the three pkl files to the Datasets folder from OneDrive on: https://1drv.ms/u/s!AilzKc-njjP7kN4oc4ku1Q9HxdUtnw?e=F24W8g 
+* Walls: this folder is to contain 3 walls sets for environment variations of 1, 2, and 3 walls. Each set contains hundreds of thousands of different distributions of walls. This helps in saving time during training instead of creating wall distributions actively at the beginning of each episode. Due to the size limitations in GitHub, the user is required to download the three pkl files to the Walls folder from OneDrive on: https://1drv.ms/u/s!AilzKc-njjP7kN4oc4ku1Q9HxdUtnw?e=F24W8g 
 
 
 Each of the MDRL-SR and MDRL-DC folders contains the following:
