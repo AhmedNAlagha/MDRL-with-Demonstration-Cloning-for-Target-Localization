@@ -9,8 +9,8 @@ The contents of this repository are as follows:
 
 
 Each of the MDRL-SR and MDRL-DC folders contains the following:
-* Main.py: the main file used to train. In the initialization of the Main class, the user needs to set self.NumOfAgents and self.NumOfWalls (max 3 walls). It is recommended to increase self.n_workers for parallelized processing. It is also recommended to train on a machine with GPU (automatically detected).
-* Environment.py: describes the target localization environment dynamics and reward function. Throughout the training, the actor policy is stored in a created folder under the name "MultiAgentLocal".
+* Main.py: the main file used to train. In the initialization of the Main class, the user needs to set self.NumOfAgents and self.NumOfWalls (max 3 walls). It is recommended to increase self.n_workers for parallelized processing. It is also recommended to train on a machine with GPU (automatically detected).  Throughout the training, the actor policy is stored in a created folder under the name "MultiAgentLocal", which can be later used for testing/inference.
+* Environment.py: describes the target localization environment dynamics and reward function.
 * PPO1.py: contains the required methods for Proximal Policy Optimization, which is used to create and update the actor/critic networks.
 * utils.py: contains a set of utilities used by the other methods.
 * test1.py: can be used for inference to test a fully trained model. This simulates the deployment process. Once the model is fully trained, the user can run this file, which creates scenarios of varying environments (different target locations, agents locations, and walls distributions), and reports localization results. The user needs to ensure that NumOfAgents and NumOfWalls are set to the same values in Main.py.
