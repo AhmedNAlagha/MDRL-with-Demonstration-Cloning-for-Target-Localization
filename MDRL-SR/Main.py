@@ -92,7 +92,7 @@ class Main:
         self.AreaSize = (1000, 1000)
         self.AgentWindow = (7, 7)
         self.NumOfWalls = 1
-        self.WallsDataset = pickle.load(open("../Datasets/Dataset_{}walls.pkl".format(self.NumOfWalls), 'rb'))
+        self.WallsDataset = pickle.load(open("../Walls/Walls_{}.pkl".format(self.NumOfWalls), 'rb'))
         self.n_observations = 8  # if embeddings then + 1
         self.Idle = 1  # whether idle is an option or not
         self.NumOfActions = 8 + self.Idle  # better be 1+n, where n is divisible by 4 (works with any n anyways).
