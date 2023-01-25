@@ -26,7 +26,7 @@ def test():
     n_observations = 8
     DistanceThreshold = 50
     max_ep_len = 100  # max timesteps in one episode
-    WallsDataset = pickle.load(open("../Datasets/Dataset_{}walls.pkl".format(NumOfWalls), 'rb'))
+    WallsDataset = pickle.load(open("../Walls/Walls_{}.pkl".format(NumOfWalls), 'rb'))
 
     env = Environment(NumOfAgents, NumOfTargets, MapDimensions, NumOfActions, NumOfWalls, AreaSize, AgentWindow, Speed,
                       DistanceThreshold, Idle, n_observations, max_ep_len, WallsDataset)
